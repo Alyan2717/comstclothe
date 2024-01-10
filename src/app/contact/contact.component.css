@@ -1,0 +1,35 @@
+.contactHeading {
+  font-weight: 800;
+  font-size: 70px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.contactDetails {
+  background-color: rgb(249, 249, 249);
+  padding: 60px 40px;
+}
+
+.leftContact {
+  display: flex;
+  align-items: center;
+}
+
+.textPad {
+  padding-top: 50px;
+}
+
+.inputField {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.iconContact {
+  font-size: 25px;
+  padding-right: 20px;
+}
+
+button{
+  padding: 10px 30px;
+}

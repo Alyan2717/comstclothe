@@ -1,0 +1,192 @@
+
+
+/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  overflow-x: hidden;
+}
+
+p {
+  font-weight: 400;
+}
+
+h2 {
+  padding: 20px;
+}
+
+header {
+  z-index: 1024;
+  position: relative;
+}
+
+label {
+  font-weight: 400;
+}
+
+a,
+a:hover {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+footer,
+section {
+  padding: 70px 0px;
+  background-color: #f4f8fd;
+}
+
+.sectionTop {
+  padding-top: 5%;
+  background-color: #fff;
+}
+
+footer {
+  background-color: #fff;
+}
+
+footer ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.navigationActionRight {
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.navStart {
+  padding: 20px;
+  position: fixed;
+  background-color: #ffffff;
+  left: 0;
+  right: 0;
+}
+
+.navigationAction {
+  font-weight: 400;
+  font-size: 17px;
+  padding: 0px 14px;
+}
+
+#navbarNavDropdown {
+  justify-content: space-between;
+}
+
+.headerLogo {
+  font-weight: 500;
+  font-size: 28px;
+  padding-left: 30px;
+}
+
+.iconStyle {
+  font-size: 25px;
+}
+
+.iconColor {
+  color: rgb(107, 235, 150);
+}
+
+
+/* Mission */
+.missionBackground {
+  background-image: url(src/assets/mission.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+}
+
+.z-99 {
+  z-index: 99;
+}
+
+/* Service */
+.service {
+  background-color: #fff;
+}
+
+.serviceText {
+  flex-shrink: 0;
+}
+
+.serviceDetail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.serviceDetail::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 100%;
+  background: black;
+  right: 0;
+}
+
+/* Footer */
+.footerHeading {
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.footerLinks {
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+.socailMediaIcons i {
+  padding: 5px;
+}
+
+/* Tab Screen */
+@media only screen and (max-width: 767px) {
+  .serviceDetail::before {
+    display: none;
+  }
+}
+
+/* Mobile Screen */
+@media only screen and (max-width: 576px) {
+  .primaryHeading {
+    font-size: 22px;
+  }
+
+  .serviceDetail::before {
+    display: none;
+  }
+}
+
+/* credential */
+@media only screen and (max-width: 900px) {
+  .sectionTop {
+    padding-top: 120px;
+  }
+}
+
+/* nav bar */
+@media only screen and (max-width: 990px) {
+  .navigationAction {
+    padding: 0px 30px;
+  }
+
+  .navigationActionRight {
+    padding: 0px 30px;
+  }
+}

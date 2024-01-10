@@ -1,0 +1,141 @@
+<!-----------------------------------|| HOME SECTION ||------------------------------------>
+<!-- =====|| Banner Starts ||====== -->
+<div class="bannerImg">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <!-- content -->
+        <div class="bannerCotent">
+          <h1 class="primaryHeading">
+            Comstiched - Custom T-Shirts for Every Occasion
+          </h1>
+          <p class="my-3">
+            In this store we will sell the tshirts with customised stiched
+            designs mostly of anime characters but most priority designs will be
+            customer given
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================|| Product Slider Starts ||============================= -->
+<section class="sliderBg">
+  <div class="container">
+    <ngx-slick-carousel class="carousel sliderMan" #slickModal="slick-carousel" [config]="slideConfig">
+      <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+        <img src="{{ slide.img }}" alt="{{ slide.name }}" width="100%">
+        <div class="slide-content">
+          <p>{{ slide.name }}</p>
+        </div>
+      </div>
+    </ngx-slick-carousel>
+  </div>
+</section>
+
+<!-- ===================|| ABOUT section Starts ||====================== -->
+<section class="about">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="aboutImg mb-2">
+          <img class="img-fluid" src="./assets/about.png" alt="About Img" />
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="aboutContent mb-2">
+          <h6 class="secHeading mt-2">ABOUT US</h6>
+          <h4 class="sectionHeading my-2">Welcome to Comstiched</h4>
+          <p>
+            At Comstiched, we’re passionate about creating custom t-shirts that
+            make a statement. Our unique designs showcase your personality and
+            interests, with a special focus on anime characters. Our goal is to
+            provide a platform for you to express yourself through your
+            clothing, while also ensuring the highest quality and customer
+            satisfaction.
+          </p>
+          <a class="primaryBtn" href="#">READ MORE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================|| Marketing section Starts ||====================== -->
+<section>
+  <div class="marketing">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2>Why Choose Comstiched?</h2>
+          <p>
+            Our custom t-shirts are made with the highest quality materials,
+            ensuring durability and comfort. Our designs are unique and tailored
+            for your individual style. We provide a seamless ordering process,
+            with fast delivery and affordable prices.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 marketPoints">
+          <p class="serialColor">01.</p>
+          <h3>Quality Materials</h3>
+          <p>
+            Our t-shirts are made from premium materials for maximum comfort and
+            durability.
+          </p>
+          <hr />
+        </div>
+        <div class="col-lg-6 marketPoints">
+          <p class="serialColor">02.</p>
+          <h3>Seamless Ordering Process</h3>
+          <p>
+            Our ordering process is easy and hassle-free, ensuring a seamless
+            experience from start to finish.
+          </p>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 marketPoints">
+          <p class="serialColor">03.</p>
+          <h3>Unique Designs</h3>
+          <p>
+            Our custom designs ensure that your t-shirt is one of a kind and
+            reflects your individual style.
+          </p>
+        </div>
+        <div class="col-lg-6 marketPoints">
+          <p class="serialColor">04.</p>
+          <h3>Fast Delivery</h3>
+          <p>
+            We strive to deliver your custom t-shirts as quickly as possible,
+            without sacrificing quality.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================|| Motive section Starts ||====================== -->
+<section class="motivate">
+  <div class="container motivateContent">
+    <div class="align-items-center row">
+      <div class="col-lg-8 col-md-7 order-2 order-md-1">
+        <p>
+          At Comstiched, we’re committed to reducing our environmental impact.
+          We use sustainable materials and ethical production methods, ensuring
+          a minimal carbon footprint. We believe in the power of fashion to make
+          a difference, and we’re proud to promote sustainability through our
+          products.
+        </p>
+      </div>
+      <div class="col-lg-4 col-md-5 order-1 order-md-2 text-center">
+        <img class="motivateImage" src="./assets/motivate.png" alt="motivation" />
+      </div>
+    </div>
+  </div>
+</section>

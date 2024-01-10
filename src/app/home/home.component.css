@@ -1,0 +1,164 @@
+/* Banner */
+.bannerImg {
+  /* background-image: url(./assets/backgroundimg.jpg); */
+  background-image: url(src/assets/backgroundimg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  /* background-color: black; */
+  background: rgb(0, 0, 0);
+  /* background: linear-gradient(
+    160deg,
+    rgba(130, 255, 245, 0.896796218487395) 0%,
+    rgba(42, 224, 216, 0.5074404761904762) 41%,
+    rgba(34, 163, 171, 1) 76%
+  ); */
+  opacity: 0.2;
+}
+
+.bannerCotent {
+  font-weight: 500;
+  z-index: 200;
+  position: relative;
+  margin-top: 100px;
+}
+
+.primaryHeading {
+  font-weight: 900;
+  font-size: 60px;
+}
+
+/* About */
+.aboutContent {
+  padding-left: 25px;
+}
+
+.secHeading {
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.sectionHeading {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.primaryBtn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  border-bottom: 1px solid;
+  padding: 10px;
+  transition: 0.3s linear;
+}
+
+.primaryBtn:hover {
+  background-color: rgb(43, 159, 226);
+  color: #fff !important;
+  border-bottom: none;
+}
+
+/* Marketing */
+.marketPoints {
+  padding-top: 50px;
+}
+
+.serialColor {
+  font-size: 20px;
+  color: blue;
+}
+
+/* Motivation */
+.motivate {
+  background-color: #fff;
+}
+
+.motivateContent {
+  background-color: #f4f8fd;
+  padding: 50px 30px;
+}
+
+.motivateImage {
+  max-width: 255px;
+  max-height: 255px;
+  border-radius: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Mission */
+.missionBackground {
+  background-image: url(src/assets/mission.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  font-size: 20px;
+  position: relative;
+}
+
+.z-99 {
+  z-index: 99;
+}
+
+/* Service */
+.service {
+  background-color: #fff;
+}
+
+.serviceText {
+  flex-shrink: 0;
+}
+
+.serviceDetail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.serviceDetail::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 100%;
+  background: black;
+  right: 0;
+}
+
+/* product slider */
+.slide {
+  padding: 20px;
+}
+
+.slide-content {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.sliderBg{
+  background-color: #0095ff;
+}
