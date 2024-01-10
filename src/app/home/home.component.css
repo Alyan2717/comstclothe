@@ -159,6 +159,12 @@
   margin-top: 10px;
 }
 
-.sliderBg{
+.sliderBg {
   background-color: #0095ff;
+}
+
+@media only screen and (max-width: 396px) {
+  .primaryHeading {
+    font-size: 20px;
+  }
 }
