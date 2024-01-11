@@ -160,9 +160,11 @@
 }
 
 .sliderBg {
-  background-color: #0095ff;
+  background-color: #92989f;
 }
 
+
+/* media queries */
 @media only screen and (max-width: 396px) {
   .primaryHeading {
     font-size: 20px;
