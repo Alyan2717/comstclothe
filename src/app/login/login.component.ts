@@ -9,7 +9,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 export class LoginComponent implements OnInit {
 
-  loginFrom: FormGroup;
+  loginForm: FormGroup;
   registerForm: FormGroup;
 
   // Variables
@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
 
   constructor(private formBuilder: FormBuilder) {
     // Login
-    this.loginFrom = this.formBuilder.group({
+    this.loginForm = this.formBuilder.group({
       username: ['', Validators.required],
       password: ['', Validators.required]
     });
@@ -35,24 +35,36 @@ export class LoginComponent implements OnInit {
   }
 
   submit(check: boolean) {
-    this.user.username = String(this.loginFrom.get('username')?.value) ?? '';
-    this.user.password = String(this.loginFrom.get('password')?.value) ?? '';
+    this.user.username = String(this.loginForm.get('username')?.value) ?? '';
+    this.user.password = String(this.loginForm.get('password')?.value) ?? '';
     this.user.email = String(this.registerForm.get('email')?.value) ?? '';
 
-    // Serive for login and Register on bool condition
+    // Sericve for login and Register on bool condition
     if (check) {
       //Login
       console.log("🚀 ~ LoginComponent ~ submit ~ login")
       // Setting States Empty
-      this.loginFrom.get('username')?.setValue('');
-      this.loginFrom.get('password')?.setValue('');
+      this.loginForm.get('username')?.setValue('');
+      this.loginForm.get('password')?.setValue('');
       this.registerForm.get('email')?.setValue('');
+
+      //Clear Variables
+      this.clearVariables();
     }
     else {
       //Register
       console.log("🚀 ~ LoginComponent ~ submit ~ register")
       // Setting States Empty
       this.registerForm.get('email')?.setValue('');
+
+      //Clear Variables
+      this.clearVariables();
     }
+  }
+
+  clearVariables() {
+    this.user.username = '';
+    this.user.password = '';
+    this.user.email = '';
   }
 }

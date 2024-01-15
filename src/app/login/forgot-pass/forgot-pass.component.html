@@ -1,0 +1,20 @@
+<section class="sectionTop">
+  <div class="container credentialPanel">
+    <div class="row">
+      <div class="mb-5">
+        <h4 class="col-lg-12 mb-5 centerForget">Forget Password</h4>
+        <div class="login border">
+          <form [formGroup]="forgetPassword" (ngSubmit)="submit()">
+            <div class="form-group">
+              <label class="mb-2">Email address *</label>
+              <input formControlName="email" class="inputField" type="text" placeholder="Email address *" />
+            </div>
+            <div class="mb-2">
+              <button type="submit" class="btn btn-dark">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

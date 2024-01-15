@@ -9,14 +9,12 @@ import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ShopComponent,
     ContactComponent,
-    LoginComponent
   ],
   imports: [
     BrowserModule,

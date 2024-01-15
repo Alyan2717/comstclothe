@@ -6,17 +6,27 @@
       <div class="col-lg-6 mb-5">
         <h4 class="mb-5">Login</h4>
         <div class="login border">
-          <form [formGroup]="loginFrom" (ngSubmit)="submit(true)">
+          <form *ngIf="loginForm" [formGroup]="loginForm" (ngSubmit)="submit(true)">
             <div class="form-group">
-              <label class="mb-2">Username or email address *</label>
+              <label class="mb-2 text-danger"
+                *ngIf="loginForm.get('username')?.hasError('required') && loginForm.get('username')?.touched && loginForm.get('username')?.dirty">Username
+                or email address *</label>
               <input formControlName="username" class="inputField" type="text"
                 placeholder="Username or email address *" />
+              <!-- <div class="text-danger validator"
+                *ngIf="loginForm.get('username')?.hasError('required') && loginForm.get('username')?.touched && loginForm.get('username')?.dirty">
+                Username or email is required.
+              </div> -->
             </div>
             <div class="form-group">
               <label class="mb-2">Password *</label>
               <input formControlName="password" class="inputField" type="text" placeholder="Password *" />
+              <div class="text-danger validator"
+                *ngIf="loginForm.get('password')?.hasError('required') && loginForm.get('password')?.touched && loginForm.get('password')?.dirty">
+                Password is required.
+              </div>
             </div>
-
+            <!-- Remember Me -->
             <div class="form-check">
               <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
               <label class="form-check-label mb-2" for="flexCheckDefault">
@@ -27,17 +37,21 @@
               <button type="submit" class="btn btn-dark">Log in</button>
             </div>
           </form>
-          <a href="#">Lost your password?</a>
+          <a routerLink="/login/forgotpass">Lost your password?</a>
         </div>
       </div>
       <!-- Register -->
       <div class="col-lg-6 mb-5">
         <h4 class="mb-5">Register</h4>
         <div class="login border">
-          <form [formGroup]="registerForm" (ngSubmit)="submit(false)">
+          <form *ngIf="registerForm" [formGroup]="registerForm" (ngSubmit)="submit(false)">
             <div class="form-group">
               <label class="mb-2">Email address *</label>
               <input formControlName="email" class="inputField" type="text" placeholder="Email address *" />
+              <div class="text-danger validator"
+                *ngIf="registerForm.get('email')?.hasError('required') && registerForm.get('email')?.touched">
+                Email is required.
+              </div>
               <p class="mb-2">
                 A link to set a new password will be sent to your email address.
               </p>

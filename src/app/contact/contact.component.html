@@ -23,15 +23,17 @@
         <i class="fa-brands fa-youtube iconContact"></i>
       </div>
       <div class="col-md-8">
-        <label class="mb-2">Name</label>
-        <input class="inputField" type="text" placeholder="Name" />
-        <label class="mb-2">Email</label>
-        <input class="inputField" type="text" placeholder="Email" />
-        <label class="mb-2">Message</label>
-        <textarea class="inputField" rows="5"></textarea>
-        <div class="mb-2">
-          <button type="button" class="btn btn-dark">Send</button>
-        </div>
+        <form [formGroup]="contactForm" (ngSubmit)="submit()">
+          <label class="mb-2">Name</label>
+          <input formControlName="name" class="inputField" type="text" placeholder="Name" />
+          <label class="mb-2">Email</label>
+          <input formControlName="email" class="inputField" type="text" placeholder="Email" />
+          <label class="mb-2">Message</label>
+          <textarea formControlName="message" class="inputField" rows="5"></textarea>
+          <div class="mb-2">
+            <button type="submit" class="btn btn-dark">Send</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
