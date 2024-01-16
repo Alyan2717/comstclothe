@@ -3,56 +3,63 @@
   <div class="container-fluid p-0">
     <nav class="navbar navbar-expand-lg navStart">
       <a class="navbar-brand headerLogo" routerLink="/home">COMSTICHED</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
-          <li class="nav-item navigationAction">
-            <a class="nav-link active" aria-current="page" routerLink="/shop"
-              >Shop</a
-            >
-          </li>
-          <!-- <li class="nav-item dropdown navigationAction">
-            <a
-              class="nav-link dropdown-toggle"
-              routerLink="/shop"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
+          <li class="nav-item dropdown navigationAction">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Shop
             </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li class="dropend">
+                <a class="dropdown-item dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">T
+                  Shirts</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <li><a class="dropdown-item">JJK</a></li>
+                  <li><a class="dropdown-item">One Piece</a></li>
+                </ul>
+              </li>
+            </ul> -->
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li> <a class="dropdown-item" href="#">
+                  T Shirts &raquo; </a>
+                <ul class="dropdown-menu dropdown-submenu">
+                  <li><a class="dropdown-item" href="#">JJK</a></li>
+                  <li> <a class="dropdown-item" href="#">One Piece</a></li>
+                </ul>
+              </li>
+              <li> <a class="dropdown-item" href="#">
+                  Sweatshirts &raquo; </a>
+                <ul class="dropdown-menu dropdown-submenu">
+                  <li><a class="dropdown-item" href="#">JJK</a></li>
+                  <li> <a class="dropdown-item" href="#">One Piece</a></li>
+                </ul>
+              </li>
+              <li> <a class="dropdown-item" href="#">
+                  Hoddies &raquo; </a>
+                <ul class="dropdown-menu dropdown-submenu">
+                  <li><a class="dropdown-item" href="#">JJK</a></li>
+                  <li> <a class="dropdown-item" href="#">One Piece</a></li>
+                </ul>
+              </li>
             </ul>
-          </li> -->
+          </li>
         </ul>
         <ul class="navbar-nav">
           <li class="nav-item navigationActionRight">
-            <a class="nav-link active" aria-current="page" routerLink="/contact"
-              >Contact</a
-            >
+            <a class="nav-link active" aria-current="page" routerLink="/contact">Contact</a>
+          </li>
+          <!-- Cart -->
+          <li class="nav-item navigationActionRight">
+            <a class="nav-link active" aria-current="page" href="#"><i
+                class="fa-solid fa-bag-shopping iconStyle px-2"></i></a>
           </li>
           <li class="nav-item navigationActionRight">
-            <a class="nav-link active" aria-current="page" href="#"
-              ><i class="fa-solid fa-bag-shopping iconStyle px-2"></i
-            ></a>
-          </li>
-          <li class="nav-item navigationActionRight">
-            <a class="nav-link active" aria-current="page" routerLink="/login"
-              ><i class="fa-solid fa-user-large iconStyle px-2"></i
-            ></a>
+            <a class="nav-link active" aria-current="page" routerLink="/login"><i
+                class="fa-solid fa-user-large iconStyle px-2"></i></a>
           </li>
         </ul>
       </div>
@@ -130,6 +137,8 @@
         <h3 class="footerHeading">Shop</h3>
         <ul>
           <li class="footerLinks"><a href="#">T shirt</a></li>
+          <li class="footerLinks"><a href="#">Sweatshirts</a></li>
+          <li class="footerLinks"><a href="#">Hoodies</a></li>
         </ul>
       </div>
       <!-- about -->
