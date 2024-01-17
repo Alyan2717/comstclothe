@@ -1,4 +1,24 @@
-<!-----------------------------------|| SHOP SECTION ||------------------------------------>
-<section>
-  <p>Shop</p>
+<!-- ===================|| Shop section Starts ||====================== -->
+<section class="sectionTop sectionBgColor">
+  <div class="container">
+    <h1 class="contactHeading">Shop</h1>
+
+    <!-- search bar -->
+
+
+    <!-- card data -->
+    <div class="row justify-content-center">
+      <div class="col-lg-3 col-md-6 cardView" *ngFor="let item of shopItems">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" [src]="item.image" alt="{{ item.name }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ item.name }}</h5>
+            <p class="card-text">{{ item.description }}</p>
+            <a routerLink="/cart" class="btn btn-success btnModifyBuy">Buy Now</a>
+            <a routerLink="/cart" class="btn btn-primary btnModifyAddtoCart m-2">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>

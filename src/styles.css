@@ -196,20 +196,26 @@ footer ul {
 
   .dropdown-menu .dropdown-submenu {
     display: none;
+    /* Hide submenus by default */
     position: absolute;
+    top: 0;
     left: 100%;
-    top: -7px;
   }
 
-  .dropdown-menu .dropdown-submenu-left {
-    right: 100%;
-    left: auto;
-  }
-
-  .dropdown-menu>li:hover>.dropdown-submenu {
+  .dropdown-menu li:focus-within .dropdown-submenu {
     display: block;
+    /* Show submenu when parent li is focused */
+  }
+
+  /* Optional styles for better visibility */
+  .dropdown-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
   }
 }
+
 
 /* Mobile Screen */
 @media only screen and (max-width: 576px) {

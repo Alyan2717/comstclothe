@@ -13,38 +13,31 @@
             <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Shop
             </a>
-            <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li class="dropend">
-                <a class="dropdown-item dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">T
-                  Shirts</a>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <li><a class="dropdown-item">JJK</a></li>
-                  <li><a class="dropdown-item">One Piece</a></li>
-                </ul>
-              </li>
-            </ul> -->
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li> <a class="dropdown-item" href="#">
+              <!-- <li> <a class="dropdown-item" routerLink="/shop" id="tshirt">
                   T Shirts &raquo; </a>
                 <ul class="dropdown-menu dropdown-submenu">
                   <li><a class="dropdown-item" href="#">JJK</a></li>
                   <li> <a class="dropdown-item" href="#">One Piece</a></li>
                 </ul>
               </li>
-              <li> <a class="dropdown-item" href="#">
+              <li> <a class="dropdown-item" routerLink="/shop" id="sweatshirt">
                   Sweatshirts &raquo; </a>
                 <ul class="dropdown-menu dropdown-submenu">
                   <li><a class="dropdown-item" href="#">JJK</a></li>
                   <li> <a class="dropdown-item" href="#">One Piece</a></li>
                 </ul>
               </li>
-              <li> <a class="dropdown-item" href="#">
+              <li> <a class="dropdown-item" routerLink="/shop" id="hoodies">
                   Hoddies &raquo; </a>
                 <ul class="dropdown-menu dropdown-submenu">
                   <li><a class="dropdown-item" href="#">JJK</a></li>
                   <li> <a class="dropdown-item" href="#">One Piece</a></li>
                 </ul>
-              </li>
+              </li> -->
+              <li><a class="dropdown-item" routerLink="/shop" [queryParams]="{ id: 'tshirt' }">T Shirts</a></li>
+              <li><a class="dropdown-item" routerLink="/shop" [queryParams]="{ id: 'sweatshirt' }">Sweatshirts</a></li>
+              <li><a class="dropdown-item" routerLink="/shop" [queryParams]="{ id: 'hoody' }">Hoodies</a></li>
             </ul>
           </li>
         </ul>

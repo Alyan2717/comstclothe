@@ -1,0 +1,26 @@
+.contactHeading {
+  font-weight: 800;
+  font-size: 70px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.cardView {
+  padding: 20px;
+}
+
+.btnModifyBuy {
+  color: white !important;
+  background-color: #e4b39e;
+  border-color: #ffff !important;
+}
+
+.btnModifyAddtoCart {
+  color: white !important;
+  background-color: #67a8a1;
+  border-color: #ffff !important;
+}
+
+.sectionBgColor {
+  background-color: #f4f8fd;
+}
