@@ -9,6 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 
 export class ShopComponent implements OnInit {
   //Variables
+  searchText: string = '';
   selectedId: string = '';
   shopItems: any[] = [];
 

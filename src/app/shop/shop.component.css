@@ -24,3 +24,12 @@
 .sectionBgColor {
   background-color: #f4f8fd;
 }
+
+.search {
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding-top: 20px;
+}
