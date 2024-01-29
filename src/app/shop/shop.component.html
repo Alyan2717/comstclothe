@@ -7,15 +7,15 @@
 
 
     <!-- card data -->
-    <div class="row justify-content-center">
+    <div class="row">
       <div class="col-lg-3 col-md-6 cardView" *ngFor="let item of shopItems">
-        <div class="card" style="width: 18rem;">
+        <div class="card">
           <img class="card-img-top" [src]="item.image" alt="{{ item.name }}">
           <div class="card-body">
             <h5 class="card-title">{{ item.name }}</h5>
             <p class="card-text">{{ item.description }}</p>
-            <a routerLink="/cart" class="btn btn-success btnModifyBuy">Buy Now</a>
-            <a routerLink="/cart" class="btn btn-primary btnModifyAddtoCart m-2">Add to Cart</a>
+            <a routerLink="/cart" class="btn btn-success btnModifyBuy" (click)="onBuy(item)">Buy Now</a>
+            <a routerLink="/cart" class="btn btn-success btnModifyAddtoCart m-2" (click)="onAddtoCart(item)">Add to Cart</a>
           </div>
         </div>
       </div>
