@@ -17,6 +17,7 @@
           <div class="card-body">
             <h5 class="card-title">{{ item.name }}</h5>
             <p class="card-text">{{ item.description }}</p>
+            <p class="card-text">{{ item.category }}</p>
             <a routerLink="/cart" class="btn btn-success btnModifyBuy" (click)="onBuy(item)">Buy Now</a>
             <a routerLink="/cart" class="btn btn-success btnModifyAddtoCart m-2" (click)="onAddtoCart(item)">Add to
               Cart</a>
